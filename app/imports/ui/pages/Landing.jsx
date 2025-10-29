@@ -1,0 +1,83 @@
+import React from 'react';
+import { Grid, Header, Image, Button } from 'semantic-ui-react';
+import { Meteor } from 'meteor/meteor';
+import { NavLink } from 'react-router-dom';
+import { Roles } from 'meteor/alanning:roles';
+import { PAGE_IDS } from '../utilities/PageIDs';
+import { ROLE } from '../../api/role/Role';
+
+/** A simple static component to render some text for the landing page. */
+const Landing = () => (
+  <div id={PAGE_IDS.LANDING}>
+    <div className="landing-background">
+      <Grid verticalAlign='middle' textAlign='center' container>
+        <div className="VA-photo">
+                    <img src="/images/VAlogo.png" alt="ServeLocal's Logo"/>
+          <div className="landing-header">
+            <Header inverted size="medium">
+                Connecting Students with Purpose
+            </Header>
+          </div>
+          <Header inverted size="large">
+            Discover meaningful volunteer opportunities that match your interests and make a difference in your community. Find and engage with local organizations that need your help.
+          </Header>
+          {(Meteor.userId() == null) && !Roles.userIsInRole(Meteor.userId(), [ROLE.VOLUNTEER]) && !Roles.userIsInRole(Meteor.userId(), [ROLE.ORGANIZATION]) ? (
+            <Grid textAlign='center'>
+              <Grid.Row>
+                <Grid.Column>
+                  <Button size="huge" color="blue" as={NavLink} exact to="/volunteer-signup">Join Now!</Button>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          ) : ''}
+        </div>
+      </Grid>
+    </div>
+    <Header className="opportunities" textAlign='center' size="huge">Dozens of Opportunities for Organizations and Volunteers</Header>
+    <br></br>
+    <Grid textAlign='center'>
+      <Grid.Row columns={2}>
+        <Grid.Column width={6}>
+                    <Header size="medium">Connecting you to opportunities from organizations making a difference in your community.</Header>
+          <p>ServeLocal is a volunteer opportunity platform that helps students find meaningful ways to serve. We aggregate opportunities from various organizations in need of passionate volunteers. </p>
+          <p>Becoming a user is required to ensure committed reliable volunteers for our organizations.</p>
+        </Grid.Column>
+        <Grid.Column width={3}>
+          <br></br>
+          <br></br>
+          <Button size="huge" color="blue" as={NavLink} exact to="/browse-opportunities">View All Opportunities</Button>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+    <Grid textAlign='center' container>
+      <Grid.Row columns={6}>
+        <Grid.Column>
+          <Image size="small" src="/images/logo1.png"/>
+          <Image size="small" src="/images/logo2.png"/>
+          <Image size="small" src="/images/logo3.png"/>
+          <Image size="small" src="/images/logo4.png"/>
+        </Grid.Column>
+        <Grid.Column>
+          <Image size="small" src="/images/logo5.png"/>
+          <Image size="small" src="/images/logo6.png"/>
+          <Image size="small" src="/images/logo7.png"/>
+          <Image size="small" src="/images/logo8.png"/>
+        </Grid.Column>
+        <Grid.Column>
+          <Image size="small" src="/images/logo9.png"/>
+          <Image size="small" src="/images/logo10.png"/>
+          <Image size="small" src="/images/logo11.png"/>
+          <Image size="small" src="/images/logo12.png"/>
+        </Grid.Column>
+        <Grid.Column>
+          <Image size="small" src="/images/logo13.png"/>
+          <Image size="small" src="/images/logo14.png"/>
+          <Image size="small" src="/images/logo15.png"/>
+          <Image size="small" src="/images/logo16.png"/>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+  </div>
+);
+
+export default Landing;
