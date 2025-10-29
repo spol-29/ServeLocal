@@ -158,7 +158,7 @@ const ViewOpportunity = ({ opportunity, ready, currentUser /* bookmarks */ }) =>
                 <Dropdown.Menu>
                   <Dropdown.Item>
                     <FacebookShareButton
-                      url={`https://aloha-time.xyz/#/view-opportunity/${opportunity._id}`}
+                      url={`https:///#/view-opportunity/${opportunity._id}`}
                       quote={opportunity.title}
                       className="Demo__some-network__share-button"
                     >
@@ -167,7 +167,7 @@ const ViewOpportunity = ({ opportunity, ready, currentUser /* bookmarks */ }) =>
                   </Dropdown.Item>
                   <Dropdown.Item>
                     <TwitterShareButton
-                      url={`https://aloha-time.xyz/#/view-opportunity/${opportunity._id}`}
+                      url={`https:///#/view-opportunity/${opportunity._id}`}
                       title={opportunity.title}
                       className="Demo__some-network__share-button"
                     >
@@ -176,7 +176,7 @@ const ViewOpportunity = ({ opportunity, ready, currentUser /* bookmarks */ }) =>
                   </Dropdown.Item>
                   <Dropdown.Item>
                     <RedditShareButton
-                      url={`https://aloha-time.xyz/#/view-opportunity/${opportunity._id}`}
+                      url={`https:///#/view-opportunity/${opportunity._id}`}
                       title={opportunity.title}
                       windowWidth={660}
                       windowHeight={460}
@@ -187,7 +187,7 @@ const ViewOpportunity = ({ opportunity, ready, currentUser /* bookmarks */ }) =>
                   </Dropdown.Item>
                   <Dropdown.Item>
                     <EmailShareButton
-                      url={`https://aloha-time.xyz/#/view-opportunity/${opportunity._id}`}
+                      url={`https:///#/view-opportunity/${opportunity._id}`}
                       subject={opportunity.title}
                       body="Link to event: "
                       className="Demo__some-network__share-button"
