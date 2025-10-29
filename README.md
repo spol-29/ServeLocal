@@ -64,6 +64,3 @@ meteor run
 3. Manage volunteer applications
 
 
-## Contact
-
-Created by Sriram
