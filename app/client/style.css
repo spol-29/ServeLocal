@@ -1,0 +1,177 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/*buttons*/
+.ui.blue.huge.button {
+  background-color: #0494c4 !important;
+}
+
+/*landing page*/
+#landing {
+  padding-bottom: 20px;
+}
+
+.landing-background {
+  background-image: url("images/landingBackground.png");
+  background-size: cover;
+  height: 600px;
+  margin-top: 10px;
+}
+
+.VA-photo{
+  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+.landing-header{
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.map{
+  text-align: center;
+}
+.description{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: white;
+}
+
+.opportunities {
+  color: #007BA4 !important;
+  padding-bottom: 20px;
+  font-size: 40px !important;
+}
+
+/*not found page*/
+.nf-div {
+  background-image: url("images/notFoundBackground.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+#nf-photo-credit {
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+/* footer component */
+footer {
+  color: white;
+  height:30px;   /* Height of the footer */
+}
+
+footer a {
+  color: white;
+}
+
+footer .ui.center.aligned.fluid.container {
+  padding-bottom: 1em;
+  background: #0494c4;
+}
+
+/*sign in page*/
+.sign-in{
+  padding-top: 10%;
+  padding-bottom: 20%;
+  background: url("images/sign-in.jpeg") no-repeat center center fixed;
+  background-size: cover ;
+  position: relative;
+
+}
+.sign-in-icon{
+  padding-left: 44%;
+}
+
+/*sign out page*/
+ .sign-out{
+   padding-top: 20%;
+   padding-bottom: 25%;
+   background: url("images/sign-out.jpeg") no-repeat center center fixed;
+   background-size: cover ;
+   padding-left: 30%;
+   padding-right: 30%;
+ }
+.organization-sign-up-top{
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background: linear-gradient(#007ba4,#2acaf8);
+}
+.my-organization-medium{
+  background-color: #eeeeee;
+}
+.my-organization-top{
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: -100px;
+  background: linear-gradient(#007ba4,#2acaf8);
+
+}
+.my-organization-title{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+  color:yellowgreen;
+
+}
+.my-organization-bottom{
+  padding-top: 40px;
+ padding-bottom: 50px;
+  text-align: center;
+}
+.volunteer-sign-up-top{
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background: linear-gradient(#007ba4,#2acaf8);
+}
+/*navbar content*/
+i.bars.icon {
+  padding-left: 10px;
+}
+
+.ui.icon.input {
+  width: 125%;
+}
+
+.divider.text {
+  padding-right: 7px;
+}
+
+/*about us page*/
+#about-us.ui.fluid.container {
+  height: 100%;
+}
+
+.about-us-content {
+  padding: 35px 0px 25px 35px;
+}
+
+.about-us-content .ui.left.aligned.header {
+  color: rgb(4, 148, 196) !important;
+}
+
+.ui.container.about-us-content p {
+  color: #838485 !important;
+}
+
+.mapinset{
+
+  width: auto;
+  height: auto;
+}
+
+/*showVolunteerProfile content
+
+.horizontalSlider___281Ls .carousel__slider .carousel__slider--horizontal {
+  height: 500px;
+}
+
+*/
